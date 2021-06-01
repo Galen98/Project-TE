@@ -32,5 +32,13 @@ public class MyInfoEdit {
         drop.selectByVisibleText("A+");
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.findElement(By.id("btnEditCustom")).click();
+        driver.findElement(By.id("btnEditCustom")).click();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.findElement(By.id("btnAddAttachment")).click();
+        WebElement text = driver.findElement(By.id("txtAttDesc"));
+        WebElement upload = driver.findElement(By.id("ufile"));
+        upload.sendKeys("C:\\Users\\Billy\\Downloads\\kuis_akhir_juni_2021_B.pdf");
+        text.sendKeys("Test");
+        driver.findElement(By.id("btnSaveAttachment")).click();
     }
 }
