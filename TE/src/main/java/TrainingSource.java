@@ -22,7 +22,6 @@ public class TrainingSource {
         driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
         driver.findElement(By.id("menu_training_defaultTrainingModulePage")).click();
         driver.findElement(By.id("menu_training_viewCourseList")).click();
-        driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-        driver.findElement(By.linkText("/index.php/training/addCourse/courseId/10")).click();
+        driver.findElement(By.xpath("//*[@href - '/index.php/training/addCourse/courseId/10']")).click();
     }
 }
