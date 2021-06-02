@@ -29,8 +29,10 @@ public class MyInfoEdit {
         WebElement ssnNumber = driver.findElement(By.id("personal_txtNICNo"));
         Select cmbn = new Select(driver.findElement(By.id("personal_cmbNation")));
         cmbn.selectByVisibleText("Indonesian");
+        firstName.clear();
         firstName.sendKeys("Paul");
         middleName.sendKeys("Paul");
+        lastName.clear();
         lastName.sendKeys("Paul");
         empID.sendKeys("12312");
         driverLcns.sendKeys("1039123");
