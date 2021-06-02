@@ -24,6 +24,6 @@ public class TrainingSource {
         driver.findElement(By.id("menu_training_defaultTrainingModulePage")).click();
         driver.findElement(By.id("menu_training_viewCourseList")).click();
         driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-        driver.findElement(By.xpath("<a href=\"/index.php/training/addCourse/courseId/10\" target=\"\">Docker Training</a>")).click();
+        driver.findElement(By.cssSelector("#resultTable > tbody > tr:nth-child(1) > td:nth-child(2) > a")).click();
     }
 }
