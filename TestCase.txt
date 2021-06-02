@@ -1,0 +1,9 @@
+Full Name isi Normal
+First Name Kosong
+Last Name Kosong
+
+Drop Down Normal
+Drop Down -- Select --
+
+File Normal
+File > 1MB
