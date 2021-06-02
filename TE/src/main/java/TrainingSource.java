@@ -5,6 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.asserts.SoftAssert;
 
 
+import java.sql.Time;
 import java.util.concurrent.TimeUnit;
 
 public class TrainingSource {
@@ -22,6 +23,7 @@ public class TrainingSource {
         driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
         driver.findElement(By.id("menu_training_defaultTrainingModulePage")).click();
         driver.findElement(By.id("menu_training_viewCourseList")).click();
-        driver.findElement(By.xpath("//*[@href - '/index.php/training/addCourse/courseId/10']")).click();
+        driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+        driver.findElement(By.xpath("<a href=\"/index.php/training/addCourse/courseId/10\" target=\"\">Docker Training</a>")).click();
     }
 }
