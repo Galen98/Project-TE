@@ -27,9 +27,11 @@ public class MyInfoEdit {
         WebElement empID = driver.findElement(By.id("personal_txtEmployeeId"));
         WebElement driverLcns = driver.findElement(By.id("personal_txtLicenNo"));
         WebElement ssnNumber = driver.findElement(By.id("personal_txtNICNo"));
-        firstName.sendKeys("Paul");
-        middleName.sendKeys("Paul");
-        lastName.sendKeys("Paul");
+        Select cmbn = new Select(driver.findElement(By.id("personal_cmbNation")));
+        cmbn.selectByVisibleText("");
+        firstName.sendKeys("");
+        middleName.sendKeys("");
+        lastName.sendKeys("");
         empID.sendKeys("");
         driverLcns.sendKeys("");
         ssnNumber.sendKeys("");
