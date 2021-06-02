@@ -19,7 +19,10 @@ public class TrainingSource {
         username.sendKeys("");
         password.sendKeys("");
         login.click();
+        driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+        driver.findElement(By.id("menu_training_defaultTrainingModulePage")).click();
         driver.findElement(By.id("menu_training_viewCourseList")).click();
-        driver.findElement(By.linkText("/index.php/training/addCourse/courseId/15"));
+        driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+        driver.findElement(By.linkText("/index.php/training/addCourse/courseId/10")).click();
     }
 }
